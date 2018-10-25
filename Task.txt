@@ -1,0 +1,22 @@
+1) Identify a cmdlet that produces a random number.
+
+
+Get-Random, 
+Get-Random -Maximum 100
+Get-Random -InputObject 1, 2, 3, 5, 8, 13
+Get-Random -InputObject "red", "yellow", "blue"
+
+2) Identify a cmdlet that displays the current dat and time
+
+get-date
+
+
+3) What type of object the cmdlet from task 2 Produce?
+
+get-date | gm
+
+4) Identify the cmdlet that displays information about installed hotfixes on windows
+get-hotfix
+
+5) Display a list of 50 newest entries from security log.
+Get-EventLog -LogName system -ComputerName abc -Newest 50
